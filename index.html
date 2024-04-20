@@ -24,7 +24,7 @@
 
       <div class="row">
         <div class="col-md-10 offset-md-1">
-          <form>
+          <form onsubmit="save(); return false;">
             <div class="row mb-3">
               <div class="col-2">
                 <label for="inputName" class="form-label">Nome:</label>
@@ -67,24 +67,24 @@
 
             <div class="row mb-3">
               <div class="col-2">
-                <label for="inputShift" class="form-label">Turno:</label>
+                <label class="form-label">Turno:</label>
               </div>
               <div class="col-5">
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioShift" id="flexRadioShift1" checked>
-                  <label class="form-check-label" for="flexRadioShift1">
+                  <input class="form-check-input" type="radio" name="flexRadioShift" id="radioShiftMorning" value="1" checked>
+                  <label class="form-check-label" for="radioShiftMorning">
                     Manhã
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioShift" id="flexRadioShift2">
-                  <label class="form-check-label" for="flexRadioShift2">
+                  <input class="form-check-input" type="radio" name="flexRadioShift" id="radioShiftAfternoon" value="2">
+                  <label class="form-check-label" for="radioShiftAfternoon">
                     Tarde
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioShift" id="flexRadioShift3">
-                  <label class="form-check-label" for="flexRadioShift3">
+                  <input class="form-check-input" type="radio" name="flexRadioShift" id="radioShiftNight" value="3">
+                  <label class="form-check-label" for="radioShiftNight">
                     Noite
                   </label>
                 </div>
@@ -115,7 +115,7 @@
 
       <div class="row">
         <div class="col col-md-10 offset-md-1">
-          <table class="table">
+          <table class="table" id="studentsTable">
             <thead>
               <tr>
                 <th scope="col">#</th>
@@ -128,30 +128,6 @@
             </thead>
 
             <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Fulano</td>
-                <td>eros@teste.com</td>
-                <td>43 9999999</td>
-                <td>javascript</td>
-                <td>manha</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Fulano</td>
-                <td>eros@teste.com</td>
-                <td>43 9999999</td>
-                <td>javascript</td>
-                <td>manha</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Fulano</td>
-                <td>eros@teste.com</td>
-                <td>43 9999999</td>
-                <td>javascript</td>
-                <td>manha</td>
-              </tr>
             </tbody>
           </table>
         </div>
@@ -171,6 +147,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
