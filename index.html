@@ -23,38 +23,38 @@
       </div>
 
       <div class="row">
-        <div class="col-md-10 offset-md-1">
+        <div class="col-10 offset-1">
           <form onsubmit="save(); return false;">
             <div class="row mb-3">
-              <div class="col-2">
+              <div class="col-10 col-md-2">
                 <label for="inputName" class="form-label">Nome:</label>
               </div>
-              <div class="col-10">
+              <div class="col-12 col-md-10">
                 <input type="text" class="form-control" id="inputName" required>
               </div>
             </div>
 
             <div class="row mb-3">
-              <div class="col-2">
+              <div class="col-12 col-md-2 col-lg-2">
                 <label for="inputEmail" class="form-label">Email:</label>
               </div>
-              <div class="col-5">
+              <div class="col-12 col-md-10 col-lg-5">
                 <input type="text" class="form-control" id="inputEmail" required>
               </div>
 
-              <div class="col-1">
+              <div class="col-12 col-md-2 col-lg-1 mt-3 mt-lg-0">
                 <label for="inputPhone" class="form-label">Telefone:</label>
               </div>
-              <div class="col-4">
+              <div class="col-12 col-lg-4 col-md-10 mt-md-3 mt-lg-0">
                 <input type="text" class="form-control" id="inputPhone" required>
               </div>
             </div>
 
             <div class="row mb-3">
-              <div class="col-2">
+              <div class="col-12 col-md-2">
                 <label for="inputClass" class="form-label">Curso:</label>
               </div>
-              <div class="col-5">
+              <div class="col-12 col-lg-5 col-md-10">
                 <select id="inputClass" class="form-select" required>
                   <option value="" selected>Escolha</option>
                   <option value="1">HTML/CSS</option>
@@ -66,10 +66,10 @@
             </div>
 
             <div class="row mb-3">
-              <div class="col-2">
+              <div class="col-12 col-md-2">
                 <label class="form-label">Turno:</label>
               </div>
-              <div class="col-5">
+              <div class="col-12 col-md-5">
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="flexRadioShift" id="radioShiftMorning" value="1" checked>
                   <label class="form-check-label" for="radioShiftMorning">
@@ -114,16 +114,16 @@
 
 
       <div class="row">
-        <div class="col col-md-10 offset-md-1">
+        <div class="col-10 offset-1">
           <table class="table" id="studentsTable">
             <thead>
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">Nome</th>
-                <th scope="col">Email</th>
-                <th scope="col">Telefone</th>
-                <th scope="col">Curso</th>
-                <th scope="col">Turno</th>
+                <th scope="col" class="d-none d-md-table-cell">Email</th>
+                <th scope="col" class="d-none d-md-table-cell">Telefone</th>
+                <th scope="col" class="d-none d-md-table-cell">Curso</th>
+                <th scope="col" class="d-none d-md-table-cell">Turno</th>
               </tr>
             </thead>
 

@@ -57,15 +57,23 @@ function addNewRow(student) {
   newRow.insertCell().appendChild(nameNode);
 
   var emailNode = document.createTextNode(student.email);
-  newRow.insertCell().appendChild(emailNode);
+  var cell = newRow.insertCell();
+  cell.className="d-none d-md-table-cell";
+  cell.appendChild(emailNode);
 
   var phoneNode = document.createTextNode(student.phone);
-  newRow.insertCell().appendChild(phoneNode);
+  var cell = newRow.insertCell();
+  cell.className="d-none d-md-table-cell";
+  cell.appendChild(phoneNode);
 
   var classNode = document.createTextNode(classes[student.class - 1].name);
-  newRow.insertCell().appendChild(classNode);
+  var cell = newRow.insertCell();
+  cell.className="d-none d-md-table-cell";
+  cell.appendChild(classNode);
 
   var shiftNode = document.createTextNode(shifts[student.shift - 1].name);
-  newRow.insertCell().appendChild(shiftNode);
+  var cell = newRow.insertCell();
+  cell.className="d-none d-md-table-cell";
+  cell.appendChild(shiftNode);
 
 }
